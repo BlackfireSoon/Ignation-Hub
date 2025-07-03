@@ -1,4 +1,7 @@
---script will autoexecute for the following scripts: Build Island, Anomicrazy
+--[[
+script will autoexecute on all Ignation scripts, 
+this makes it easy for me to add more banned players and stuff
+]]
 
 local player = game.Players.LocalPlayer
 local banned = {
