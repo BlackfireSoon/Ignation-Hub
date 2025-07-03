@@ -1,3 +1,5 @@
+--script will autoexecute for the following scripts: Build Island, Anomicrazy
+
 local player = game.Players.LocalPlayer
 local banned = {
   'blockdown64';
