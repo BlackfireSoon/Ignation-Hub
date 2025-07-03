@@ -1,0 +1,1 @@
+--this is the OLD anomicrazy script, the new one is here: https://github.com/BlackfireSoon/Ignation-Hub/blob/main/Anomicrazy/script.lua
