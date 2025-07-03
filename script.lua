@@ -3,4 +3,4 @@ local placeIds = {
 	[1490130369] = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Anomicrazy/script.lua'; --Anomic
 }
 
-loadstring(placeIds[game.GameId])()
+loadstring(game:HttpGet(placeIds[game.GameId]))()
