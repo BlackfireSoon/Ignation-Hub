@@ -4,7 +4,7 @@ local placeIds = {
 	['else'] = 'https://pastebin.com/raw/tQZYjYV0'; --c00lkidd UI not made by Ignation
 }
 if placeIds[game.GameId] then
-    loadstring(game:HttpGet(placeIds[game.GameId]))()
+    loadstring(game:HttpGet(tostring(placeIds[game.GameId]))()
 else
     loadstring(game:HttpGet(placeIds['else']))()
 end
