@@ -1,7 +1,10 @@
 local placeIds = {
-	[2000151171] = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Build%20Island/yz-script.lua'; --Build Island 
-	[1490130369] = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Anomicrazy/script.lua'; --Anomic
+	[2000151171] = {'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Build%20Island/yz-script.lua',
+                        'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Build%20Island/noctisadmin.lua'}; --Build Island 
+	[1490130369] = {'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/Anomicrazy/script.lua'}; --Anomic
 }
 
-local url = placeIds[game.GameId] or 'https://pastebin.com/raw/tQZYjYV0'
-loadstring(game:HttpGet(url))()
+local urls = placeIds[game.GameId] or {'https://pastebin.com/raw/tQZYjYV0'}
+for i, url in pairs(urls) do
+    loadstring(game:HttpGet(url))()
+end
