@@ -5,6 +5,6 @@ local placeIds = {
 }
 
 local urls = placeIds[game.GameId] or {'https://pastebin.com/raw/tQZYjYV0'}
-for i, url in pairs(urls) do
+for i, url in ipairs(urls) do
     loadstring(game:HttpGet(url))()
 end
