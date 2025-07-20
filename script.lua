@@ -6,5 +6,6 @@ local placeIds = {
 
 local urls = placeIds[game.GameId] or {'https://pastebin.com/raw/tQZYjYV0'}
 for i, url in ipairs(urls) do
+    print(i, ': ', url)
     loadstring(game:HttpGet(url))()
 end
