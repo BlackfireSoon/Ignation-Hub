@@ -3,7 +3,7 @@
 return function(frame: Frame)
 	local UIS = game:GetService('UserInputService')
 	local dragToggle = nil
-	local dragSpeed = 0.25
+	local dragSpeed = 0.1
 	local dragStart = nil
 	local startPos = nil
 
