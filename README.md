@@ -28,12 +28,15 @@ Use ``:CreateWindow`` to create a new window with a specified Name and Primary C
 
 ``:CreateToggle`` will add a bool toggle to your Window, and will callback a boolean value whenever the button is clicked.
 ```lua
-    Library:CreateToggle(Window:CanvasGroup, Name:string, State:boolean, Callback: ()->()): Frame```
+    Library:CreateToggle(Window:CanvasGroup, Name:string, State:boolean, Callback: ()->()): Frame
+```
 
 ``:CreateTextBox`` will add a TextBox to your Window, and will callback a string value whenever the textbox's FocusLost event is triggered. You can also customize it to be a Large TextBox or Multiline-Code TextBox.
 ```lua
-    Library:CreateTextBox(Window:CanvasGroup, Name:string, Text:string, Properties:{Large:boolean, Placeholder:string, Code:boolean}, Callback: ()->(), Changed: ()->())```
+    Library:CreateTextBox(Window:CanvasGroup, Name:string, Text:string, Properties:{Large:boolean, Placeholder:string, Code:boolean}, Callback: ()->(), Changed: ()->())
+```
 
 ``:CreateSlider`` will add a horizontal slider to your Window, and will callback a number value whenever the slider's pointer is moved. You may also add custom properties such as Min (defaults to 0), Max (defaults to 100), and Step (defaults to 1). 
 ```lua
-    Library:CreateSlider(Window:CanvasGroup, Name:string, Value:number, Properties:{Step:number, Max:number, Min:number}, Callback: ()->())```
+    Library:CreateSlider(Window:CanvasGroup, Name:string, Value:number, Properties:{Step:number, Max:number, Min:number}, Callback: ()->())
+```
