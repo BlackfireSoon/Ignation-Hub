@@ -24,7 +24,8 @@ Use ``:CreateWindow`` to create a new window with a specified Name and Primary C
 
 ``:CreateButton`` will add a button to your Window, and will callback whenever the button is clicked.
 ```lua
-    Library:CreateButton(Window:CanvasGroup, Name:string, IconId:number?, Callback: ()->()): Frame```
+    Library:CreateButton(Window:CanvasGroup, Name:string, IconId:number?, Callback: ()->()): Frame
+```
 
 ``:CreateToggle`` will add a bool toggle to your Window, and will callback a boolean value whenever the button is clicked.
 ```lua
