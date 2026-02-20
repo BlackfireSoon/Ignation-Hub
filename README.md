@@ -8,11 +8,10 @@ Our UI Library is special, it uses multiple windows instead of having one window
 
 **Load**
 
-After loading the library, you may access the global variable named IgnUILib
+Get the UI Library by loading the raw script URL
 ```lua
-    Library = _G.IgnUILib
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/modules/UILib.lua'))()
 ```
-You may also use ``_G:GetIgnUILib(StartUpSoundId:number)`` if you want a custom StartUp sound.
 
 
 **Functions**
