@@ -25,6 +25,8 @@ Use ``:CreateWindow`` to create a new window with a specified Name and Primary C
 ```lua
     Library:CreateButton(Window:CanvasGroup, Name:string, IconId:number?, Callback: ()->()): Frame
 ```
+IconId is optional, just leave it at ``nil```if you want no button Icon.
+You can find many sleek Icons at [Lucide](https://lucide.dev/icons)
 
 ``:CreateToggle`` will add a bool toggle to your Window, and will callback a boolean value whenever the button is clicked.
 ```lua
