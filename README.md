@@ -6,8 +6,6 @@ Coming soon
 # UI Library
 Our UI Library is special, it uses multiple windows instead of having one window with multiple tabs like a Geometry Dash client.
 ---
-***
-___
 **Load**
 
 Get the UI Library by loading the raw script URL
