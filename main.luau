@@ -8,11 +8,14 @@ if request then
 end
 
 local PlaceId = game.PlaceId
-local url = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/games/'..PlaceId..'/index.luau'
-local raw = game:HttpGet(raw)
+local URL = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/games/'..PlaceId..'/index.luau'
 
-if raw then
-    loadstring(game:HttpGet(raw))()
+local call,raw = pcall(function()
+    return game:HttpGet(URL)
+end)
+
+if call and raw and not raw:find('404') then
+    loadstring(raw)()
 else
-    print("Ignation Hub does not support this game!")
+    print('Ignation Hub does not support this game!', 'PlaceId: '..PlaceId)
 end
