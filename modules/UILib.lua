@@ -643,6 +643,7 @@ local script = G2L["2"];
 		local _,ret = pcall(function()
 			loadstring(str)
 		end)
+		return ret
 	end
 	
 	function FitText(Label:TextLabel)
@@ -651,7 +652,6 @@ local script = G2L["2"];
 	end
 	
 	local UIdragify = loadstring('https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/modules/UIdrag.luau')()
-	
 	
 	function Lib:CreateWindow(Name:string, Color:Color3): CanvasGroup
 	
