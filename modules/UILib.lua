@@ -1,9 +1,9 @@
-local request = (syn and syn.request) or (http and http.request) or http_request or request
-if request then
-	request({
-		Url = "https://discord.gg/EbYAXG7tDt",
-		Method = "GET"
-	})
+local url = 'https://discord.gg/EbYAXG7tDt'
+local open = openurl or open_url or setclipboard
+if open then
+    open(url)
+else
+    game.Players.LocalPlayer:Kick('Shit executor detected. Use Xeno or Solara, its better.')
 end
 
 -- Instances: 59 | Scripts: 1 | Modules: 0 | Tags: 0
