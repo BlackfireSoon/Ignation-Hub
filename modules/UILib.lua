@@ -1,9 +1,18 @@
-local url = 'https://discord.gg/EbYAXG7tDt'
-local open = openurl or open_url or setclipboard
-if open then
-    open(url)
-else
-    game.Players.LocalPlayer:Kick('Shit executor detected. Use Xeno or Solara, its better.')
+local url = setclipboard('https://discord.gg/EbYAXG7tDt')
+local request = (syn and syn.request) or (http and http.request) or http_request
+local discordCode = "dBFQ39MzyM"
+
+if request then
+    request({
+        Url = 'http://127.0.0.1:6463/rpc?v=1',
+        Method = 'POST',
+        Headers = {['Content-Type'] = 'application/json', ['Origin'] = 'https://discord.com'},
+        Body = game:GetService("HttpService"):JSONEncode({
+            cmd = 'INVITE_BROWSER',
+            args = {code = discordCode},
+            nonce = game:GetService("HttpService"):GenerateGUID(false)
+        })
+    })
 end
 
 -- Instances: 59 | Scripts: 1 | Modules: 0 | Tags: 0
