@@ -965,11 +965,11 @@ local script = G2L["2"];
 		_G.IgnSoundId = StartUpSoundId
 		return Lib
 	end
+	task.spawn(C_2);
 	while not Lib.CreateSlider do
 task.wait()
 	end
     return Lib
 end;
-task.spawn(C_2);
 
 return Lib
