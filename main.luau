@@ -1,11 +1,4 @@
 local player = game.Players.LocalPlayer
-local request = (syn and syn.request) or (http and http.request) or http_request or request
-if request then
-    request({
-        Url = "https://discord.gg/EbYAXG7tDt",
-        Method = "GET"
-    })
-end
 
 local PlaceId = game.PlaceId
 local URL = 'https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/games/'..PlaceId..'/index.luau'
