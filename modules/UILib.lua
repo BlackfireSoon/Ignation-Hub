@@ -647,7 +647,7 @@ local script = G2L["2"];
 		Label.TextScaled = not Label.TextFits
 	end
 	
-	local UIdragify = loadstring('https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/modules/UIdrag.luau')()
+	local UIdragify = loadstring(game:HttpGet('https://raw.githubusercontent.com/BlackfireSoon/Ignation-Hub/refs/heads/main/modules/UIdrag.luau'))()
 	
 	function Lib:CreateWindow(Name:string, Color:Color3): CanvasGroup
 	
