@@ -977,4 +977,4 @@ local script = G2L["2"];
 end;
 
 C_2()
-    return Lib
+    return _G.IgnUILib
