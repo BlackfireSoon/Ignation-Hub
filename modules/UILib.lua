@@ -975,10 +975,9 @@ local script = G2L["2"];
 		return Lib
 	end
 	task.spawn(C_2);
+end;
+
 	while not Lib.CreateSlider do
 task.wait()
 	end
     return Lib
-end;
-
-return Lib
