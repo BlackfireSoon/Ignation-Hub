@@ -46,3 +46,5 @@ You can find many sleek Icons at [Lucide](https://lucide.dev/icons)
     Library:CreateSlider(Window:CanvasGroup, Name:string, Value:number, Properties:{Step:number, Max:number, Min:number}, Callback: ()->())
 ```
 ---
+
+https://media.discordapp.net/attachments/1473357628389458092/1475126405976166482/image.png?ex=69d461c5&is=69d31045&hm=9093314696810529549519628669081e254c28adfed59f6efb6d37d345e0ee6b&=&format=webp&quality=lossless&width=1321&height=729
